@@ -1,0 +1,9 @@
+[Unit]
+Description=TFTP daemon by H. Peter Anvin
+Documentation=https://mirrors.edge.kernel.org/pub/software/network/tftp/tftp-hpa/
+
+[Service]
+ExecStart=/home/andyc/bin/tftpd --foreground --secure --user andyc --permissive --create --umask 022 /home/andyc/tftpboot
+
+[Install]
+WantedBy=multi-user.target
