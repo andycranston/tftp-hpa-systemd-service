@@ -22,7 +22,7 @@ Edits you may need to make:
 
 + The path and name of the tftpd executable
 + The username for the --user option
-+ The directto serve files from and to
++ The directory to serve files from (for GETs)  and to (for PUTs)
 
 For example:
 
@@ -39,10 +39,10 @@ Copy `tftpd-hpa.service` to the directory:
 Make sure the mode, owner and group of:
 
 ```
-/etc/systemd/
+/etc/systemd/tftpd-hpa.service
 ```
 
-are:
+is:
 
 ```
 -rwxr-xr-x   root   root
