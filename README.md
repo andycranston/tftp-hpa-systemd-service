@@ -33,13 +33,13 @@ ExecStart=/home/andyc/bin/tftpd --foreground --secure --user andyc --permissive 
 Copy `tftpd-hpa.service` to the directory:
 
 ```
-/etc/systemd/
+/etc/systemd/system
 ```
 
 Make sure the mode, owner and group of:
 
 ```
-/etc/systemd/tftpd-hpa.service
+/etc/systemd/system/tftpd-hpa.service
 ```
 
 is:
